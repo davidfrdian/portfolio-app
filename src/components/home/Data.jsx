@@ -56,12 +56,9 @@ const Data = () => {
         </svg>
       </h1>
 
-      <h3 className="home__subtitle">Lorem, ipsum.</h3>
+      <h3 className="home__subtitle">Frontend Developer</h3>
       <p className="home__description">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi ea
-        dolorum at incidunt doloremque odit praesentium aspernatur deserunt
-        sapiente amet distinctio porro possimus harum, nesciunt autem sunt. Ad,
-        reiciendis neque.
+      I am a Software Engineer with a background in International Relations, specializing in building responsive and intuitive user interfaces. During RevoU’s Full Stack bootcamp, I developed key frontend features for an e-commerce app, praised for its clean design and seamless user experience. I am driven by a passion for learning and creating impactful software solutions.
       </p>
 
       <a href="#contact" className="button button--flex">
