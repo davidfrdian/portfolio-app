@@ -19,14 +19,14 @@
   --body-font: "Poppins", sans-serif;
 
   /*.5rem = 8px | 1rem = 16px ...*/
-  --big-font-size: 3rem;
-  --h1-font-size: 2.25rem;
+  --big-font-size: 2.5rem;
+  --h1-font-size: 2rem;
   --h2-font-size: 1.5rem;
-  --h3-font-size: 1.25rem;
-  --normal-font-size: 1rem;
-  --small-font-size: 0.875rem;
-  --smaller-font-size: 0.813rem;
-  --tiny-font-size: 0.625rem;
+  --h3-font-size: 1rem;
+  --normal-font-size: 0.800rem;
+  --small-font-size: 0.700rem;
+  --smaller-font-size: 0.600rem;
+  --tiny-font-size: 0.500rem;
 
   /*========== Font weight ==========*/
   --font-normal: 400;
@@ -151,7 +151,7 @@ img {
   display: inline-block;
   background-color: var(--title-color);
   color: var(--container-color);
-  padding: 1.25rem 2rem;
+  padding: 1rem 1.75rem;
   border-radius: 1rem;
   font-weight: var(--font-medium);
 }
@@ -178,7 +178,7 @@ img {
   }
 
   .button {
-    padding: 1rem 1.75rem;
+    padding: 0.75rem 1.50rem;
   }
 
   .button__icon {
