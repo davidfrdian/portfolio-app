@@ -10,7 +10,7 @@ const Info = () => {
       </div>
 
       <div className="about__box">
-        <i class="bx bx-briefcase-alt-2 about__icon"></i>
+        <i class="bx bx-briefcase about__icon"></i>
         <h3 className="about__title">Lorem.</h3>
         <span className="about__subtitle">Lorem, ipsum dolor.</span>
       </div>
