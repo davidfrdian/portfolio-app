@@ -1,0 +1,15 @@
+.footer {
+  background-color: var(--container-color);
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.footer__container {
+  padding: 2rem 0 2rem;
+}
+
+.footer__copy {
+  display: block;
+  color: var(--title-color);
+  text-align: center;
+  font-size: var(--smaller-font-size);
+}
