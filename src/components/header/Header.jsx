@@ -1,20 +1,45 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import "./header.css";
 
 const Header = () => {
-  // change background header
-
-  window.addEventListener("scroll", function () {
-    const header = document.querySelector(".header");
-
-    // when the scroll is higher than 200 viewport height, add the scroll-header class to a tag with the header tag
-    if (this.scrollY >= 80) header.classList.add("scroll-header");
-    else header.classList.remove("scroll-header");
-  });
-
-  // toggle menu
+  // Toggle menu
   const [Toggle, showMenu] = useState(false);
   const [activeNav, setActiveNav] = useState("#home");
+
+  const menuRef = useRef(null);
+
+  // Close menu when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (menuRef.current && !menuRef.current.contains(event.target)) {
+        showMenu(false);
+      }
+    };
+
+    if (Toggle) {
+      document.addEventListener("mousedown", handleClickOutside);
+    } else {
+      document.removeEventListener("mousedown", handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [Toggle]);
+
+  // Add scroll event listener
+  useEffect(() => {
+    const handleScroll = () => {
+      const header = document.querySelector(".header");
+      if (window.scrollY >= 80) header.classList.add("scroll-header");
+      else header.classList.remove("scroll-header");
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
     <header className="header">
@@ -22,7 +47,10 @@ const Header = () => {
         <a href="#home" className="nav__logo">
           David
         </a>
-        <div className={Toggle ? "nav__menu show-menu" : "nav__menu"}>
+        <div
+          ref={menuRef}
+          className={Toggle ? "nav__menu show-menu" : "nav__menu"}
+        >
           <ul className="nav__list grid">
             <li className="nav__item">
               <a
@@ -72,10 +100,10 @@ const Header = () => {
                     : "nav__link"
                 }
               >
-                <i className="uil uil-game-structure nav__icon"> </i>Qualification
+                <i className="uil uil-game-structure nav__icon"> </i>
+                Qualification
               </a>
             </li>
-
 
             <li className="nav__item">
               <a
@@ -106,13 +134,13 @@ const Header = () => {
             </li>
           </ul>
           <i
-            class="uil uil-times nav__close"
+            className="uil uil-times nav__close"
             onClick={() => showMenu(!Toggle)}
           ></i>
         </div>
 
         <div className="nav__toggle" onClick={() => showMenu(!Toggle)}>
-          <i class="uil uil-apps"></i>
+          <i className="uil uil-apps"></i>
         </div>
       </nav>
     </header>
