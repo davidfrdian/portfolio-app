@@ -68,7 +68,6 @@
   transform: translateX(0.25rem);
 }
 
-
 .portfolio__no-projects {
   display: flex;
   flex-direction: column;
@@ -77,7 +76,7 @@
   width: 100%;
   text-align: center;
   gap: 1.5rem;
-margin-top: var(--mb-2);
+  margin-top: var(--mb-3);
 }
 
 .no-projects__img {
@@ -90,9 +89,6 @@ margin-top: var(--mb-2);
   color: gray;
   font-weight: 500;
 }
-
-
-
 
 /* active portfolio */
 .active-portfolio {

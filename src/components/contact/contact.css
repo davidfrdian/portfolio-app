@@ -71,7 +71,7 @@
 .contact__form-div {
   position: relative;
   margin-bottom: var(--mb-2);
-  height: 4rem;
+  height:3rem;
 }
 
 .contact__form-input {
@@ -100,12 +100,14 @@
 }
 
 .contact__form-area {
-  height: 11rem;
+  height: 8rem;
 }
 
 .contact__form-area textarea {
   resize: none;
 }
+
+
 
 /*=============== BREAKPOINTS ===============*/
 /* For large devices */
@@ -140,9 +142,4 @@
     .contact__form{
         width: 100%;
     }
-}
-
-/* For small devices */
-@media screen and (max-width: 350px) {
-
 }
