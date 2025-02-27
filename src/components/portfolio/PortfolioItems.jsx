@@ -7,7 +7,7 @@ const PortfolioItems = ({ item }) => {
 
       <h3 className="portfolio__title">{item.title}</h3>
       <a href="#" className="portfolio__button">
-        Demo <i className="bx bx-right-arrow-alt portfolio__button-icon"></i>
+        Detail <i className="bx bx-right-arrow-alt portfolio__button-icon"></i>
       </a>
     </div>
   );

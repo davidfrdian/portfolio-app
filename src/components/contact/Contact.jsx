@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import "./contact.css";
+import toast, { Toaster } from "react-hot-toast";
 
 const Contact = () => {
   const form = useRef();
@@ -8,11 +9,19 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
+    const toastId = toast.loading("Sending..."); // Show loading toast
+
     emailjs
       .sendForm("service_8pizm0c", "template_t7arjve", form.current, {
         publicKey: "9aoAhhj8HJay4aUe9",
       })
-      e.target.reset()
+      .then(() => {
+        toast.success("Message sent successfully!", { id: toastId }); // Update toast to success
+        e.target.reset();
+      })
+      .catch(() => {
+        toast.error("Failed to send message. Try again.", { id: toastId }); // Update toast to error
+      });
   };
 
   return (
@@ -32,13 +41,13 @@ const Contact = () => {
               <span className="contact__card-data">dferdian11@gmail.com</span>
 
               <a
-                href="mailto:dferdian11@gmail.com.com"
+                href="mailto:dferdian11@gmail.com"
                 className="contact__button"
                 target="_blank"
                 rel="noreferrer"
               >
                 Write me{" "}
-                <i className="bx bx-right-arrow-alt contact__button-icon"></i>{" "}
+                <i className="bx bx-right-arrow-alt contact__button-icon"></i>
               </a>
             </div>
 
@@ -55,7 +64,7 @@ const Contact = () => {
                 rel="noreferrer"
               >
                 Write me{" "}
-                <i className="bx bx-right-arrow-alt contact__button-icon"></i>{" "}
+                <i className="bx bx-right-arrow-alt contact__button-icon"></i>
               </a>
             </div>
           </div>
@@ -91,7 +100,7 @@ const Contact = () => {
               <label className="contact__form-tag">Project</label>
               <textarea
                 name="project"
-                className="contact__form-input "
+                className="contact__form-input"
                 placeholder="Write your project"
                 cols="30"
                 rows="10"
@@ -99,11 +108,11 @@ const Contact = () => {
               ></textarea>
             </div>
 
-            <button className="button button--flex">
+            <button className="button button--flex" type="submit">
               Send Message
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="button__icon"
+                className="button__icon"
                 width="24"
                 height="24"
                 viewBox="0 0 24 24"
@@ -119,6 +128,16 @@ const Contact = () => {
                 />
               </svg>
             </button>
+            <Toaster
+              position="top-center"
+              reverseOrder={false}
+              containerStyle={{
+                top: 30,
+                left: 20,
+                bottom: 20,
+                right: 20,
+              }}
+            />
           </form>
         </div>
       </div>
