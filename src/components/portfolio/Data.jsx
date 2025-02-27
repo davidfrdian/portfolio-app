@@ -7,25 +7,25 @@ export const projectsData = [
   {
     id: 1,
     image: Work1,
-    title: "lorem ipsum",
+    title: "QuickBuy E-commerce Application",
     category: "Website",
   },
   {
     id: 2,
     image: Work2,
-    title: "lorem ipsum",
-    category: "design",
+    title: "Pokemon App",
+    category: "website",
   },
   {
     id: 3,
     image: Work3,
-    title: "lorem ipsum",
-    category: "Other",
+    title: "Gojek Clone Homepage",
+    category: "website",
   },
   {
     id: 4,
     image: Work4,
-    title: "lorem ipsum",
+    title: "Spider Club",
     category: "website",
   },
 ];

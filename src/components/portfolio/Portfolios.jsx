@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { projectsData } from "./Data";
 import { projectsNav } from "./Data";
 import PortfolioItems from "./PortfolioItems";
+import NoProjectImage from "../../../src/assets/NoProjectImage.png"
 
 const Portfolios = () => {
   const [item, setItem] = useState({ name: "all" });
@@ -27,13 +28,12 @@ const Portfolios = () => {
 
   return (
     <div>
+      {/* Filter Buttons */}
       <div className="portfolio__filters">
         {projectsNav.map((item, index) => {
           return (
             <span
-              onClick={(e) => {
-                handleClick(e, index);
-              }}
+              onClick={(e) => handleClick(e, index)}
               className={`${
                 active === index ? "active-portfolio" : ""
               } portfolio__item`}
@@ -45,10 +45,16 @@ const Portfolios = () => {
         })}
       </div>
 
+      {/* Project List */}
       <div className="portfolio__container container grid">
-        {projects.map((item) => {
-          return <PortfolioItems item={item} key={item.id} />;
-        })}
+        {projects.length > 0 ? (
+          projects.map((item) => <PortfolioItems item={item} key={item.id} />)
+        ) : (
+          <div className="portfolio__no-projects">
+            <img src={NoProjectImage} alt="No projects" className="no-projects__img" />
+            <p className="no-projects__text">No Projects Yet</p>
+          </div>
+        )}
       </div>
     </div>
   );
