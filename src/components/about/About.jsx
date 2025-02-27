@@ -15,9 +15,18 @@ const About = () => {
         <div className="about__data">
           <Info />
           <p className="about__description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
-            dolorem eius impedit doloremque sequi minus autem sint
-            necessitatibus, nemo est!
+            Outside of coding, I enjoy listening to music, playing games,
+            working out, and reading manhwa. I also have an interest in video
+            editing, mainly using CapCut to experiment with visuals and
+            transitions. While not a professional editor, I love refining
+            content to make it more engaging. <br />
+            <br />
+            Whether it's learning a new skill, analyzing how different platforms
+            engage users, or simply listening and reading other people's
+            stories, I love challenging myself to develop in different ways.{" "}
+            <br />
+            <br />
+            Let's connect and create something amazing together! 🚀
           </p>
 
           <a download="" href={CV} className="button button--flex">
