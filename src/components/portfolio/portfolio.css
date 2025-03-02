@@ -90,6 +90,108 @@
   font-weight: 500;
 }
 
+
+/* Portfolio Detail Styling */
+
+.portfolio-detail-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.portfolio-detail {
+  margin: 5rem 4rem 2rem;
+}
+
+.portfolio-detail__title {
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: var(--font-medium);
+  margin-bottom: var(--mb-0-5);
+}
+
+.portfolio-detail__tools{
+margin: 2rem 0;
+}
+
+.portfolio-detail__img {
+  width: 500px;
+  border-radius: 12px; /* Slightly smaller border radius */
+  margin-bottom: 30px; /* Increased bottom margin */
+  border: 1px solid rgba (0, 0, 0, 0.1);
+  justify-self: center;
+}
+
+.portfolio-detail__content {
+  border: 1px solid rgba (0, 0, 0, 0.1);
+  background-color: var(--container-color);
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+.portfolio-detail__content p {
+  margin-bottom: 15px; /* Increased margin for better spacing */
+  line-height: 1.6; /* Enhanced line height for readability */
+}
+
+.portfolio-detail__links {
+  display: flex;
+  justify-content:end; /* Space out the links evenly */
+  margin-top: 25px; /* Increased top margin */
+  gap: 1.5rem;
+}
+
+.portfolio-detail__links-logo{
+font-size: 1.1rem;
+padding: 6px 1px;
+}
+
+.portfolio-detail__link {
+  cursor: pointer;
+  color: var(--title-color);
+  padding: 0.25rem 0.75rem;
+  font-weight: var(--font-medium);
+  border-radius: 0.5rem;
+  text-transform: capitalize;
+  transition: 0.3s;
+}
+
+.portfolio-detail__link:hover {
+  background-color: var(--title-color);
+  color: var(--container-color);
+}
+
+.portfolio__back-button {
+  max-width: fit-content;
+  color: var(--text-color);
+  font-size: var(--small-font-size);
+  display: flex;
+  align-items: center;
+  column-gap: 0.25rem;
+  justify-self: center;
+}
+
+.portfolio__back-button-icon {
+  font-size: 1rem;
+  transition: 0.4s;
+}
+
+.portfolio__back-button:hover .portfolio__back-button-icon {
+  transform: translateX(0.25rem);
+}
+
+.tools-icon{
+display: flex;
+}
+
+.tools-icon span{
+  width: 30px;
+  margin: 1rem 1rem 0 0;
+}
+
+
 /* active portfolio */
 .active-portfolio {
   background-color: var(--title-color);
@@ -119,7 +221,20 @@
 /* For medium devices */
 @media screen and (max-width: 768px) {
   .portfolio__container {
-    grid-template-columns: max-content;
+  grid-template-columns: max-content;
+  }
+
+  .portfolio-detail-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .portfolio-detail {
+    margin: 3rem 2rem;
+  }
+
+  .portfolio__back-button {
+margin-top: 4rem;
   }
 
   .no-projects__img {

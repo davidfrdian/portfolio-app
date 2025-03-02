@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { projectsData } from "./Data";
 import { projectsNav } from "./Data";
 import PortfolioItems from "./PortfolioItems";
-import NoProjectImage from "../../../src/assets/NoProjectImage.png"
+import NoProjectImage from "../../../src/assets/NoProjectImage.png";
 
 const Portfolios = () => {
   const [item, setItem] = useState({ name: "all" });
@@ -13,10 +13,9 @@ const Portfolios = () => {
     if (item.name === "all") {
       setProjects(projectsData);
     } else {
-      const newProjects = projectsData.filter((project) => {
-        return project.category.toLowerCase() === item.name;
-      });
-
+      const newProjects = projectsData.filter((project) =>
+        project.category.toLowerCase() === item.name
+      );
       setProjects(newProjects);
     }
   }, [item]);
@@ -30,19 +29,15 @@ const Portfolios = () => {
     <div>
       {/* Filter Buttons */}
       <div className="portfolio__filters">
-        {projectsNav.map((item, index) => {
-          return (
-            <span
-              onClick={(e) => handleClick(e, index)}
-              className={`${
-                active === index ? "active-portfolio" : ""
-              } portfolio__item`}
-              key={index}
-            >
-              {item.name}
-            </span>
-          );
-        })}
+        {projectsNav.map((item, index) => (
+          <span
+            onClick={(e) => handleClick(e, index)}
+            className={`${active === index ? "active-portfolio" : ""} portfolio__item`}
+            key={index}
+          >
+            {item.name}
+          </span>
+        ))}
       </div>
 
       {/* Project List */}
