@@ -102,14 +102,13 @@
   margin-bottom: 1rem;
 }
 .portfolio-detail {
-  margin: 5rem 4rem 2rem;
+  margin: 7rem 4rem 2rem;
 }
 
 .portfolio-detail__title {
   font-size: 1.5rem;
-  text-align: center;
+  text-align:start;
   font-weight: var(--font-medium);
-  margin-bottom: var(--mb-0-5);
 }
 
 .portfolio-detail__tools{
@@ -249,6 +248,12 @@ margin-top: 4rem;
 
   .portfolio__img {
     width: 100%;
+  }
+
+  .portfolio-detail__title {
+    font-size: 1rem;
+    text-align:center;
+    font-weight: var(--font-medium);
   }
 }
 
