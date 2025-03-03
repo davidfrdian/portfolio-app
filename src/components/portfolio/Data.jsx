@@ -12,8 +12,9 @@ export const projectsData = [
     image: Work1,
     title: "QuickBuy E-commerce Application",
     category: "Website",
-    background:
-      "QuickBuy is an e-commerce platform designed to provide seamless shopping experiences.",
+    background: `In today's rapidly evolving digital landscape, the demand for fast, efficient, and user-friendly e-commerce platforms is growing. QuickBuy is designed as a dummy e-commerce platform created for development and testing purposes. It provides a simulated online shopping experience with an intuitive interface and optimized performance, allowing users to explore features such as instant payments, personalized product recommendations, and integration with multiple shipping services. 
+      
+      Furthermore, QuickBuy is intended to demonstrate the capabilities of an e-commerce system without processing real transactions. It serves as a prototype for businesses and developers to test functionalities like sales analytics, automated promotions, and inventory management. With cutting-edge technology and robust security measures, QuickBuy acts as a learning and experimentation tool while showcasing the potential of modern e-commerce solutions.`,
     tools: [
       {
         name: "Next.js",
@@ -104,8 +105,9 @@ export const projectsData = [
     image: Work2,
     title: "Pokemon App",
     category: "Website",
-    background:
-      "A Pokémon information app that allows users to search for Pokémon details using an external API.",
+    background: `The Pokémon Information App is designed to provide users with a seamless and interactive way to access detailed information about their favorite Pokémon. Utilizing an external API, the app retrieves real-time data, ensuring that users receive up-to-date information on various Pokémon species, including their abilities, types, evolutions, and base stats.
+
+    This application is built with a user-friendly interface, making it easy for both casual fans and dedicated trainers to explore and learn more about the Pokémon universe. Users can search for specific Pokémon, browse a complete list of Pokémon, and save their favorites for quick access. Additionally, users can view detailed Pokémon information such as species, type, attack, defense, and HP stats. Whether comparing stats, discovering new species, or creating a personalized collection of favorite Pokémon, this app serves as a comprehensive and convenient resource for all Pokémon enthusiasts.`,
     tools: [
       {
         name: "React.js",
@@ -141,8 +143,9 @@ export const projectsData = [
     image: Work3,
     title: "Gojek Clone Homepage",
     category: "website",
-    background:
-      "A responsive clone of Gojek's homepage using modern UI frameworks.",
+    background: `The Gojek Dummy App is a responsive clone of Gojek's homepage, designed using HTML, CSS, and JavaScript. This project aims to replicate the visual and functional aspects of the original Gojek website, providing an immersive experience for users while maintaining a sleek and modern interface.
+    
+    Built with responsiveness in mind, this clone ensures optimal display across various devices, including desktops, tablets, and mobile phones. It serves as an excellent learning tool for developers to understand front-end development principles, UI/UX design, and responsive web design techniques. While this app does not include backend functionality or real transactions, it successfully mimics the look and feel of Gojek's homepage, making it a valuable reference for web development enthusiasts.`,
     tools: [
       {
         name: "HTML",
@@ -178,8 +181,11 @@ export const projectsData = [
     image: Work4,
     title: "Spider Club",
     category: "website",
-    background:
-      "QuickBuy is an e-commerce platform designed to provide seamless shopping experiences.",
+    background: `The Spider Club App is a web-based gallery inspired by Pinterest, designed to showcase an extensive collection of Spider-Man images. Built using HTML, CSS, and a touch of JavaScript, this application provides an engaging and visually appealing browsing experience for Spider-Man fans.
+      
+      With a responsive layout, Spider Club ensures that users can seamlessly explore and enjoy high-quality images of Spider-Man across different devices. The design mimics the intuitive and dynamic grid structure of Pinterest, allowing users to navigate effortlessly through various Spider-Man visuals. Although this app does not include backend functionality, it serves as a great reference for front-end development and UI/UX design enthusiasts who appreciate superhero-themed web projects.
+
+`,
     tools: [
       {
         name: "HTML",
@@ -216,8 +222,9 @@ export const projectsData = [
     image: Work5,
     title: "Cat Breeds",
     category: "website",
-    background:
-      "QuickBuy is an e-commerce platform designed to provide seamless shopping experiences.",
+    background: `The Cat Breeds App is a simple yet informative web project designed to showcase various cat breeds. Built using only HTML and CSS, this project serves as my first step into web development, focusing on structuring content and styling elements effectively.
+      
+      The application presents a collection of different cat breeds with basic information about each. While it does not include interactivity or dynamic features, it explores fundamental HTML elements and CSS styling techniques to create a visually appealing and well-structured layout. This project is a hands-on learning experience, allowing me to experiment with different styling methods and layout designs to enhance the presentation of content on the web.`,
     tools: [
       {
         name: "HTML",
@@ -246,8 +253,9 @@ export const projectsData = [
     title:
       "Podcast: Representasi dan Tantangan Perempuan di Dunia Politik | FPCI Talks!",
     category: "other",
-    background:
-      "It is said that women make up more than half of the world’s population, yet their representation in the political arena is still very low. In many countries, women face various challenges when it comes to participating in politics. Some of these challenges include gender discrimination, lack of financial resources, and cultural barriers. In this episode of Cubit Julit Podcast, our members are gonna be discussing more about this topic.",
+    background: `Women make up more than half of the world's population, yet their representation in the political arena remains significantly low. Despite progress in gender equality, many women continue to face obstacles when pursuing political roles. These challenges include gender discrimination, limited financial resources, and deep-rooted cultural barriers that hinder their participation in governance and decision-making processes.
+    
+    In this episode of the Representation and Challenges of Women in Politics podcast, available on Spotify, we delve into the realities women encounter in political spheres. We explore the factors contributing to the gender gap in politics, discuss the societal and institutional challenges they face, and highlight inspiring stories of women who have broken barriers. Through this discussion, we aim to raise awareness and foster dialogue on the importance of gender representation in leadership and governance.`,
     tools: [
       {
         name: "Google Docs",
@@ -277,8 +285,11 @@ export const projectsData = [
     image: Work7,
     title: "Teaser Unboxing Foreign Policy #6 Event",
     category: "other",
-    background:
-      "QuickBuy is an e-commerce platform designed to provide seamless shopping experiences.",
+    background: `The UFC 6 Teaser Video is a dynamic and engaging promotional content designed to highlight the key themes of the upcoming Unboxing Foreign Policy (UFC) #6 webinar. With a duration of 4 minutes and 12 seconds, this teaser aims to capture the essence of the discussion surrounding the topic “Towards the 2024 Election: Examining the State of Freedom of Speech in ASEAN.”
+      
+      This teaser video provides a compelling introduction to the webinar, emphasizing the importance of freedom of speech in ASEAN countries, particularly in the context of the 2024 Indonesian elections. It showcases snippets of expert insights, thought-provoking questions, and visual representations of the varying conditions of free speech across different ASEAN nations. Through impactful visuals and engaging narration, the video is crafted to spark curiosity and encourage audience participation in the main event.
+      
+      UFC 6 is a part of FPCI Chapter UPNVJ’s annual program, which serves as a forum for discussing contemporary foreign policy issues. This teaser not only serves as a promotional tool but also as an informative piece that underscores the relevance of free speech in democratic processes. By offering a preview of the insightful discussions that will take place, the video aims to increase audience engagement and awareness about the complexities of freedom of expression in the region.`,
     tools: [
       {
         name: "Capcut",

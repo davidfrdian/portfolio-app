@@ -12,27 +12,27 @@ const PortfolioDetail = () => {
 
   return (
     <div className="portfolio-detail">
+      <h1 className="portfolio-detail__title">{project.title}</h1>
+
+      <div className="portfolio-detail__tools">
+        <p>
+          <strong>Category: </strong>{" "}
+          {project.category
+            .split(" ")
+            .map(
+              (word) =>
+                word.charAt(0).toUpperCase() + word.slice(1).toLowerCase()
+            )
+            .join(" ")}
+        </p>
+        <p className="tools-icon">
+          {project.tools.map((tool, index) => (
+            <span key={index}>{tool.icon()}</span>
+          ))}
+        </p>
+      </div>
       <div className="portfolio-detail-container">
         <div>
-          <h1 className="portfolio-detail__title">{project.title}</h1>
-
-          <div className="portfolio-detail__tools">
-            <p><strong>Category: </strong>
-              {" "}
-              {project.category
-                .split(" ")
-                .map(
-                  (word) =>
-                    word.charAt(0).toUpperCase() + word.slice(1).toLowerCase()
-                )
-                .join(" ")}
-            </p>
-            <p className="tools-icon">
-              {project.tools.map((tool, index) => (
-                <span key={index}>{tool.icon()}</span>
-              ))}
-            </p>
-          </div>
           <img
             src={project.image}
             alt={project.title}
@@ -42,7 +42,7 @@ const PortfolioDetail = () => {
 
         <div>
           <div className="portfolio-detail__content">
-            <p>
+            <p style={{ whiteSpace: "pre-line" }}>
               <strong>
                 Background <br />
               </strong>{" "}
