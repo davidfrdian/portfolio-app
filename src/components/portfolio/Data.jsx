@@ -5,8 +5,45 @@ import Work4 from "../.././assets/work4.png";
 import Work5 from "../.././assets/work5.png";
 import Work6 from "../.././assets/work6.jpg";
 import Work7 from "../.././assets/work7.png";
+import Work8 from "../.././assets/work8.png";
 
 export const projectsData = [
+  {
+    id: 8,
+    image: Work8,
+    title: "Rock Paper Scissors Game",
+    category: "website",
+    background: `This project is an interactive Rock Paper Scissors game built using HTML, CSS, and JavaScript. The player selects one of the three options, and the computer randomly chooses its move. The result — win, lose, or draw — is displayed instantly. The purpose of this project is to practice basic programming logic, DOM manipulation, and real-time user interaction. The responsive design also ensures a smooth experience across different screen sizes, including mobile devices.`,
+    tools: [
+      {
+        name: "HTML",
+        icon: () => (
+          <img
+            src="https://img.icons8.com/color/48/html-5--v1.png"
+            alt="html-5--v1"
+          />
+        ),
+      },
+      {
+        name: "CSS",
+        icon: () => (
+          <img src="https://img.icons8.com/fluency/48/css3.png" alt="css3" />
+        ),
+      },
+
+      {
+        name: "Javascript",
+        icon: () => (
+          <img
+            src="https://img.icons8.com/color/48/javascript--v1.png"
+            alt="javascript--v1"
+          />
+        ),
+      },
+    ],
+    github: "https://github.com/davidfrdian/rock-paper-scissors",
+    link: "https://rock-paper-scissors-fawn-one.vercel.app/",
+  },
   {
     id: 1,
     image: Work1,
