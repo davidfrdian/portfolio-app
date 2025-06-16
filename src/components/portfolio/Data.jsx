@@ -6,8 +6,45 @@ import Work5 from "../.././assets/work5.png";
 import Work6 from "../.././assets/work6.jpg";
 import Work7 from "../.././assets/work7.png";
 import Work8 from "../.././assets/work8.png";
+import Work9 from "../.././assets/work9.png";
 
 export const projectsData = [
+  {
+    id: 9,
+    image: Work9,
+    title: "Currency Converter",
+    category: "website",
+    background: `Currency Converter is a simple web application that allows users to convert currencies in real-time. Built with HTML, CSS, and JavaScript, the app utilizes an external API to fetch up-to-date exchange rates. It features a responsive design, dropdowns to select currencies, an input field for the amount, and a "Convert" button to quickly reverse the currency pair. This project is ideal both as a practical tool for quick currency conversions and as a front-end development exercise involving API integration.`,
+    tools: [
+      {
+        name: "HTML",
+        icon: () => (
+          <img
+            src="https://img.icons8.com/color/48/html-5--v1.png"
+            alt="html-5--v1"
+          />
+        ),
+      },
+      {
+        name: "CSS",
+        icon: () => (
+          <img src="https://img.icons8.com/fluency/48/css3.png" alt="css3" />
+        ),
+      },
+
+      {
+        name: "Javascript",
+        icon: () => (
+          <img
+            src="https://img.icons8.com/color/48/javascript--v1.png"
+            alt="javascript--v1"
+          />
+        ),
+      },
+    ],
+    github: "https://github.com/davidfrdian/currency-converter",
+    link: "https://currency-converter-nine-weld-67.vercel.app/",
+  },
   {
     id: 8,
     image: Work8,
