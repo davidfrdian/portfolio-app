@@ -7,8 +7,47 @@ import Work6 from "../.././assets/work6.jpg";
 import Work7 from "../.././assets/work7.png";
 import Work8 from "../.././assets/work8.png";
 import Work9 from "../.././assets/work9.png";
+import Work10 from "../.././assets/work10.png";
 
 export const projectsData = [
+    {
+    id: 10,
+    image: Work10,
+    title: "Go Movies",
+    category: "website",
+    background: `Currency Converter is a simple web application that allows users to convert currencies in real-time. Built with HTML, CSS, and JavaScript, the app utilizes an external API to fetch up-to-date exchange rates. It features a responsive design, dropdowGo Movies is an interactive web application that allows users to search and explore a wide range of movies from around the world in real-time using data from The Movie Database (TMDb). Built with React and Tailwind CSS, the app features a modern, responsive design with smooth pagination, debounce-enabled search functionality, and user-friendly loading and error handling. With its clean and elegant user interface, users can effortlessly discover trending titles or look up specific movies with ease. Go Movies is designed to deliver a seamless and enjoyable movie discovery experience—right at your fingertips.ns to select currencies, an input field for the amount, and a "Convert" button to quickly reverse the currency pair. This project is ideal both as a practical tool for quick currency conversions and as a front-end development exercise involving API integration.`,
+    tools: [
+       {
+        name: "React.js",
+        icon: () => (
+          <img
+            src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/50/external-react-a-javascript-library-for-building-user-interfaces-logo-color-tal-revivo.png"
+            alt="external-react-a-javascript-library-for-building-user-interfaces-logo-color-tal-revivo"
+          />
+        ),
+      },
+             {
+        name: "Taildwind CSS",
+        icon: () => (
+           <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      x="0px"
+                      y="0px"
+                      viewBox="0 0 48 48"
+                    >
+                      <path
+                        fill="#00acc1"
+                        d="M24,9.604c-6.4,0-10.4,3.199-12,9.597c2.4-3.199,5.2-4.398,8.4-3.599 c1.826,0.456,3.131,1.781,4.576,3.247C27.328,21.236,30.051,24,36,24c6.4,0,10.4-3.199,12-9.598c-2.4,3.199-5.2,4.399-8.4,3.6 c-1.825-0.456-3.13-1.781-4.575-3.247C32.672,12.367,29.948,9.604,24,9.604L24,9.604z M12,24c-6.4,0-10.4,3.199-12,9.598 c2.4-3.199,5.2-4.399,8.4-3.599c1.825,0.457,3.13,1.781,4.575,3.246c2.353,2.388,5.077,5.152,11.025,5.152 c6.4,0,10.4-3.199,12-9.598c-2.4,3.199-5.2,4.399-8.4,3.599c-1.826-0.456-3.131-1.781-4.576-3.246C20.672,26.764,17.949,24,12,24 L12,24z"
+                      ></path>
+                    </svg>
+        ),
+      },
+
+ 
+    ],
+    github: "https://github.com/davidfrdian/GoMovies",
+    link: "https://go-movies-chi.vercel.app/",
+  },
   {
     id: 9,
     image: Work9,
